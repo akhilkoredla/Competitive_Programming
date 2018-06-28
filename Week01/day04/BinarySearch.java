@@ -7,11 +7,10 @@ import static org.junit.Assert.*;
 
 public class Solution {
     
-    public static boolean contains(int[] a, int n) {
-        return contains(a,n,0,a.length-1);
-    }
 
-    public static boolean contains(int[] a, int n,int low,int high) {
+    public static boolean contains(int[] a, int n) {
+       
+       int low=0,high=a.length-1;
        
        while(low<=high) {
         int mid=(low+high)/2;
@@ -20,7 +19,7 @@ public class Solution {
             high=mid-1;
             
         else if(n>a[mid])
-            low=mid+1;a
+            low=mid+1;
         else 
             return true;
        }
