@@ -10,9 +10,9 @@ class roomKey{
 		for (int i=0;i<n;i++) {
 			for (int j=0;j<a[i].length;j++ ) {
 				int x=a[i][j];
-                if(x<marked.length) {
-                    if (!marked[x] && x!=i) marked[x] = true;
-                }
+                		if(x<marked.length) {
+                   			 if (!marked[x] && x!=i) marked[x] = true;
+                		}
 			}
 		}
 
